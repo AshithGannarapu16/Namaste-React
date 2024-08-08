@@ -1,8 +1,0 @@
-git init
-for cloning the repo:
-git clone <repository_url>
-git status
-git add 
-git add .
-git commit -m "Your commit message"
-git push origin 
