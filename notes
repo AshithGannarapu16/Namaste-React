@@ -1,8 +1,4 @@
-        import React from "react";
-        import ReactDOM from "react-dom/client";  
-        
-        
-        // const heading=React.createElement("h1",{id:"heading"},"Hello world from react.js");
+// const heading=React.createElement("h1",{id:"heading"},"Hello world from react.js");
         // const root=ReactDOM.createRoot(document.getElementById("root"));
         // root.render(heading);
 
@@ -59,42 +55,5 @@
 
         // const root=ReactDOM.createRoot(document.getElementById("root"));
         // root.render(jsxHeading);
-
         
-        const Title=()=>{
-           return( <div>
-                <h1 className="head" tabIndex="5">Namaste React using jsx</h1>
-            </div>
-           )
-        };
-
-        const Ashith=()=>{
-            return(
-                <>
-                <h1 className="body" tabIndex={5}>Hello From Ashith Gannarapu</h1>
-                </>
-            )
-        };
-
-        const Amulya=()=>{
-            return(
-                <div className="" tabIndex="">
-                    HELLO THIS IS AMULYA GANNARAPU
-                </div>
-            )
-        }
-
-        const HeadingComponent=()=>{
-            return(
-            <div id="container">
-                <Title/>
-                <Ashith/>
-                <Amulya/>
-                <Amulya/>
-                <Amulya/>
-            <h1 className="heading">Namaste React from functional component</h1>
-            </div>
-            );
-        };
-        const root=ReactDOM.createRoot(document.getElementById("root"));
-        root.render(<HeadingComponent />);
+    
