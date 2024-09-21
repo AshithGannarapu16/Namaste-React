@@ -61,6 +61,7 @@
         // root.render(jsxHeading);
 
         
+
         const Title=()=>{
            return( <div>
                 <h1 className="head" tabIndex="5">Namaste React using jsx</h1>
@@ -76,9 +77,12 @@
             )
         };
 
+        const visual=<span>React Element</span>
+
         const Amulya=()=>{
             return(
                 <div className="" tabIndex="">
+                    {visual}
                     HELLO THIS IS AMULYA GANNARAPU
                 </div>
             )
