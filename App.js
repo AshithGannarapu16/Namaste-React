@@ -1,104 +1,87 @@
         import React from "react";
         import ReactDOM from "react-dom/client";  
         
-        
-        // const heading=React.createElement("h1",{id:"heading"},"Hello world from react.js");
-        // const root=ReactDOM.createRoot(document.getElementById("root"));
-        // root.render(heading);
 
-        // const Murali=React.createElement("h1",{id:"Murali"},"Hello This is Murali Gannarapu Ashith's Father");
-        // const murali=ReactDOM.createRoot(document.getElementById("murali"));
-        // murali.render(Murali);
-
-        // const Neeraja=React.createElement("h2",{id:"Neeraja"},"Hello This is Neeraja Ashith's mother");
-        // const neeraja=ReactDOM.createRoot(document.getElementById("neeraja"));
-        // neeraja.render(Neeraja)
-
-        // const Amulya=React.createElement("h3",{id:"Amulya"},"Hello This Amulya Ashith's sister ");
-        // const amulya=ReactDOM.createRoot(document.getElementById("amulya"));
-        // amulya.render(Amulya);
-
-
-        // const Ashith=React.createElement("h4",{id:"Ashith"},"Hello This Ashith Gannarapu");
-        // const ashith=ReactDOM.createRoot(document.getElementById("ashith"));
-        // ashith.render(Ashith)
-
-        // const parent=React.createElement(
-        //     "div",
-        //     {
-        //         id:"parent"
-        //     },[
-        //         React.createElement(
-        //             "div",{
-        //                 id:"child"
-        //             },
-        //             [React.createElement("h1",{},"This is namaste-reactj"),React.createElement("h2",{},"I'm an h2 tag")]
-        //         ),React.createElement(
-        //             "div",{
-        //                 id:"child2"
-        //             },
-        //             [React.createElement("h1",{},"I'm an h1 tag"),React.createElement("h2",{},"I'm an h2 tag")]
-        //         )
-        //     ]
-        // );
-
-        // const amul=ReactDOM.createRoot(document.getElementById("amul"));
-        // amul.render(parent)
-
-        // const heading=React.createElement("h1",{id:"heading"},"This is after changes ");
-        // const root=ReactDOM.createRoot(document.getElementById("root"));
-        // root.render(heading);
-
-        // const jsxHeading=(
-        //     <h1 className="head" tabIndex="5">
-        //         Namaste React using JSX
-        //     </h1>
-        // )
-
-        // console.log(jsxHeading);
-
-        // const root=ReactDOM.createRoot(document.getElementById("root"));
-        // root.render(jsxHeading);
-
-        
-
-        const Title=()=>{
-           return( <div>
-                <h1 className="head" tabIndex="5">Namaste React using jsx</h1>
-            </div>
-           )
-        };
-
-        const Ashith=()=>{
+        const Header=()=>{
             return(
-                <>
-                <h1 className="body" tabIndex={5}>Hello From Ashith Gannarapu</h1>
-                </>
+                <div className="header">
+                    <div className="logo-container">
+                        <img className="logo"  src="https://www.shutterstock.com/image-vector/food-studio-vector-logo-kitchen-260nw-610419776.jpg"/>
+                    </div>
+                    <div className="nav-items">
+                        <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Cart</li>
+                        </ul>
+                    </div>
+
+                </div>
             )
-        };
+        }
+       
+        // const styleCard =;
 
-        const visual=<span>React Element</span>
+        const RestaurantCard=(props)=>{
 
-        const Amulya=()=>{
+            console.log(props);
             return(
-                <div className="" tabIndex="">
-                    {visual}
-                    HELLO THIS IS AMULYA GANNARAPU
+                <div className="res-card" style={{ backgroundColor:"#f0f0f"}}>
+                    <img 
+                    className="res-logo"
+                    alt="res-logo"
+                    src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/gp1ityra6utvzqn6ghnv"
+                    />
+                    <h3>{props.resName}</h3>
+                    <h4>Biryani,North Indian,Asian</h4>
+                    <h4>4.2 stars</h4>
+                    <h4>38 minutes</h4>
                 </div>
             )
         }
 
-        const HeadingComponent=()=>{
+        const Body =()=>{
             return(
-            <div id="container">
-                <Title/>
-                <Ashith/>
-                <Amulya/>
-                <Amulya/>
-                <Amulya/>
-            <h1 className="heading">Namaste React from functional component</h1>
-            </div>
-            );
-        };
+                <div className="body">
+                    <div className="search">Search</div>
+                    <div className="res-container">
+                        <RestaurantCard resName="Maghana Foods" cuisine="Biryani,North Indian, Asian"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza" />
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+
+
+
+                     
+                        
+                    </div>
+                </div>
+            )
+        }
+        
+        const AppLayout=()=>{
+            return(
+                <div className="app">
+                    <Header/>
+                    <Body/>
+                </div>
+            )
+        }
         const root=ReactDOM.createRoot(document.getElementById("root"));
-        root.render(<HeadingComponent />);
+        root.render(<AppLayout/>);
