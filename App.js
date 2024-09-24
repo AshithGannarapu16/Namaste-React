@@ -65,6 +65,14 @@
                         <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
                         <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
                         <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
+                        <RestaurantCard resName="KFC" cuisine="Burger,Fast Food,Pizza"/>
 
 
 
